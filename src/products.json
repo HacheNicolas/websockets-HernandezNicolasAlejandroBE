@@ -3,90 +3,110 @@
     "id": 1,
     "title": "espresso",
     "description": "Espresso clásico",
-    "price": 380,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584347/espresso_xrpvxx.jpg",
     "code": "cafe111",
-    "stock": 30
+    "price": 380,
+    "status": true,
+    "stock": 30,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584347/espresso_xrpvxx.jpg"
   },
   {
     "id": 2,
     "title": "Cappuccino",
     "description": "Shot de espresso con leche texturizada y espuma de leche",
-    "price": 550,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562398/cappuccino_mlsuwo.jpg",
     "code": "cafe222",
-    "stock": 25
+    "price": 550,
+    "status": true,
+    "stock": 25,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562398/cappuccino_mlsuwo.jpg"
   },
   {
     "id": 3,
     "title": "Vienés",
     "description": "Doble shot espresso con espuma de leche y crema batida",
-    "price": 570,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579340/vienes_eyst5m.jpg",
     "code": "cafe333",
-    "stock": 15
+    "price": 570,
+    "status": true,
+    "stock": 15,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579340/vienes_eyst5m.jpg"
   },
   {
     "id": 4,
     "title": "Bombón Ethiopia",
     "description": "Shot de espresso, leche condensada, leche texturizada y barra de chocolate",
-    "price": 820,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579359/bombonEtiopia_h8njpf.jpg",
     "code": "cafe444",
-    "stock": 15
+    "price": 820,
+    "status": true,
+    "stock": 15,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678579359/bombonEtiopia_h8njpf.jpg"
   },
   {
     "id": 5,
     "title": "Spicey Honey",
     "description": "Doble ristretto, jarabe de miel, garam masala y leche texturizada",
-    "price": 600,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562422/spiceyHoney_azcnqs.jpg",
     "code": "cafe555",
-    "stock": 15
+    "price": 600,
+    "status": true,
+    "stock": 15,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562422/spiceyHoney_azcnqs.jpg"
   },
   {
     "id": 6,
     "title": "Filtrado",
     "description": "Consistencia y acidez en taza limpia | Percolación",
-    "price": 850,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562412/filtrado_kero5r.jpg",
     "code": "cafe666",
-    "stock": 10
+    "price": 850,
+    "status": true,
+    "stock": 10,
+    "category": "cafe",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562412/filtrado_kero5r.jpg"
   },
   {
     "id": 7,
     "title": "Espresso Tonic",
     "description": "Doble shot de espresso con tónica y rodaja de naranja, pomelo o limón",
-    "price": 820,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584707/espressoTonic_yhnhzg.jpg",
     "code": "cafeFrio111",
-    "stock": 20
+    "price": 820,
+    "status": true,
+    "stock": 20,
+    "category": "cafeFrio",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678584707/espressoTonic_yhnhzg.jpg"
   },
   {
     "id": 8,
     "title": "Affogato",
     "description": "Doble shot de espresso con dos bochas de helado de vainilla",
-    "price": 880,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562370/affogato_pcncmq.jpg",
     "code": "cafeFrio222",
-    "stock": 5
+    "price": 880,
+    "status": true,
+    "stock": 5,
+    "category": "cafeFrio",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562370/affogato_pcncmq.jpg"
   },
   {
     "id": 9,
     "title": "Filtrado Frio",
     "description": "Filtrado por goteo o inmersión durante 18hs.",
-    "price": 730,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562416/filtradoFrio_hbrzym.jpg",
     "code": "cafeFrio333",
-    "stock": 10
+    "price": 730,
+    "status": true,
+    "stock": 10,
+    "category": "cafeFrio",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562416/filtradoFrio_hbrzym.jpg"
   },
   {
     "id": 10,
     "title": "Licuado",
     "description": "Banana, Frutilla, Frutos rojos, Mango o Maracuya (al agua o con leche)",
-    "price": 700,
-    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562419/licuado_rccsdu.jpg",
     "code": "bebidas111",
-    "stock": 30
+    "price": 700,
+    "status": true,
+    "stock": 30,
+    "category": "bebidas",
+    "thumbnail": "https://res.cloudinary.com/duxqgahbk/image/upload/v1678562419/licuado_rccsdu.jpg"
   }
 ]

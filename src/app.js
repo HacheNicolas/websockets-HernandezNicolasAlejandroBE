@@ -1,50 +1,18 @@
-import ProductManager from "./ProductManager.js";
 import express from "express";
+import { routerProducts } from "./routes/products.routes.js";
+import { routerCarts } from "./routes/carts.routes.js";
 
 const app = express();
 const port = 8080;
+
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const productManager = new ProductManager("./src/products.json");
 
-app.get("/products", (req, res) => {
-  const limit = req.query.limit;
-  let products = productManager.getProducts();
-  if (req.query && limit) {
-    const productsFilteredByLimit = products.slice(0, limit);
-    return res.json({
-      status: "success",
-      msg: "Se muestran los primeros " + limit + " productos.",
-      data: productsFilteredByLimit,
-    });
-  } else {
-    return res.json({
-      status: "success",
-      msg: "Se muestran todos los productos.",
-      data: products,
-    });
-  }
-});
-
-app.get("/products/:id", (req, res) => {
-  const id = req.params.id;
-  const product = productManager.getProductById(id);
-  if (product) {
-    return res.json({
-      status: "success",
-      msg: "Producto encontrado con éxito.",
-      data: { product },
-    });
-  } else {
-    return res.json({
-      status: "error",
-      msg: "Este producto no existe.",
-      data: {},
-    });
-  }
-});
+app.use("/api/products", routerProducts);
+app.use("/api/carts", routerCarts);
 
 app.get("*", (req, res) => {
-  return res.json({
+  return res.status(404).json({
     status: "error",
     msg: "Error, esta ruta no existe.",
     data: {},
