@@ -54,16 +54,6 @@ socketServer.on("connection", (socket) => {
     socketServer.emit("allSelectedProducts", products);
   });
   socket.on("addNewProduct", (prod) => {
-    console.log(
-      "ampooos" + prod.title,
-      prod.description,
-      prod.code,
-      prod.price,
-      prod.status,
-      prod.stock,
-      prod.category,
-      prod.thumbnail
-    );
     const product = productManager.addProduct(
       prod.title,
       prod.description,
