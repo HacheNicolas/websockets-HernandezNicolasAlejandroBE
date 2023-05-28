@@ -1,0 +1,70 @@
+<div>
+  <div style="display: flex; justify-content:center">
+    {{#if viewTitle}}
+      <h1>{{viewTitle}}</h1>
+    {{else}}
+      <h1>Unknown Title</h1>
+    {{/if}}
+  </div>
+
+  <hr />
+  <div
+    style="background: linear-gradient(90deg,rgba(0,0,0,.642),rgba(0,0,0,.642)),url(https://res.cloudinary.com/duxqgahbk/image/upload/v1678562618/fondo_ygwqg2.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    margin: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border: 1px solid white;
+    border-radius:10px;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;"
+  >
+
+    {{#each products}}
+      <div
+        style="display:flex;
+         max-height:300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    background-color:rgb(46, 21, 0);"
+      >
+        <img
+          src="{{this.thumbnail}}"
+          style="display: block;
+            background-size: cover;
+            background-repeat:
+            no-repeat;
+            background-position:center;
+            max-width: 300px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right: 1px solid white;"
+          alt=""
+        />
+        <div
+          style="display:flex;width: 450px; flex-direction: column; justify-content:space-evenly"
+        >
+          <p>id: {{this.id}}</p>
+          <p>title: {{this.title}}</p>
+          <p>description: {{this.description}}</p>
+          <p>code: {{this.code}}</p>
+          <p>price: {{this.price}}</p>
+          <p>status: {{this.status}}</p>
+          <p>stock: {{this.stock}}</p>
+          <p>category: {{this.category}}</p>
+        </div>
+
+      </div>
+
+    {{/each}}
+  </div>
+  <hr />
+</div>

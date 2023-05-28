@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+h1,
+h2 {
+  color: white;
+}
+p {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: larger;
+}
+font {
+}

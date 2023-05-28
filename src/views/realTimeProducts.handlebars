@@ -1,0 +1,112 @@
+<div>
+  <div style="display: flex; justify-content:center;">
+    {{#if viewTitle}}
+      <h1>{{viewTitle}}</h1>
+    {{else}}
+      <h1>Unknown Title</h1>
+    {{/if}}
+  </div>
+
+  <hr />
+
+  <div
+    style="display: flex; justify-content:center; justify-content:space-evenly;"
+  >
+    <div
+      style="width: 900px;background-color:rgb(46, 21, 0); padding: 10px; border: 1px solid white; border-radius:10px;"
+    >
+      <div style="display: flex; flex-direction: column; align-items:center;">
+        <h2>Add new product</h2>
+        <form
+          style="display: flex; flex-direction: row; justify-content:space-evenly; flex-wrap:wrap;"
+        >
+          <div style="width:200px;">
+            <label for="inputTitle"><p>Title</p></label>
+            <input type="text" id="inputTitle" placeholder="title" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputDescription"><p>Description</p></label>
+            <input
+              type="text"
+              id="inputDescription"
+              placeholder="description"
+            />
+          </div>
+          <div style="width:200px;">
+            <label for="inputCode"><p>Code</p></label>
+            <input type="text" id="inputCode" placeholder="code" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputPrice"><p>Price</p></label>
+            <input type="text" id="inputPrice" placeholder="price" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputStatus"><p>Status</p></label>
+            <input type="text" id="inputStatus" placeholder="status" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputStock"><p>Stock</p></label>
+            <input type="text" id="inputStock" placeholder="stock" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputCategory"><p>Category</p></label>
+            <input type="text" id="inputCategory" placeholder="category" />
+          </div>
+          <div style="width:200px;">
+            <label for="inputThumbnail" style=""><p>Thumbnail</p></label>
+            <input type="text" id="inputThumbnail" placeholder="Thumbnail" />
+          </div>
+
+        </form>
+        <button
+          type="button"
+          id="btnAddNewProduct"
+          style="width: 100px; height: 50px; font-size:large; background-color:rgb(107, 201, 0); border: 1px solid white; border-radius:10px;"
+        >Agregar</button>
+      </div>
+
+    </div>
+
+    <div
+      style="width: 500px; display: flex; flex-direction: column; align-items:center;justify-content:space-between;background-color:rgb(46, 21, 0); padding: 10px; border: 1px solid white; border-radius:10px;"
+    >
+      <h2>Add existing product by ID</h2>
+      <select
+        name="input"
+        id="input"
+        style="width: 100px; height: 50px; font-size:larger"
+      ></select>
+      <button
+        type="button"
+        id="btnAddProduct"
+        style="width: 100px; height: 50px; font-size:large; background-color:rgb(107, 201, 0); border: 1px solid white; border-radius:10px;"
+      >Agregar</button>
+    </div>
+
+  </div>
+  <hr />
+  <div
+    id="divProducts"
+    style="background: linear-gradient(90deg,rgba(0,0,0,.642),rgba(0,0,0,.642)),url(https://res.cloudinary.com/duxqgahbk/image/upload/v1678562618/fondo_ygwqg2.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    margin: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border: 1px solid white;
+    border-radius:10px;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;"
+  >
+  </div>
+  <hr />
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/socket.js"></script>
